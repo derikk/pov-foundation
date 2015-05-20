@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>The POV Foundation</title>
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Signika:300' rel='stylesheet' type='text/css'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type="text/css">
+        body {
+            font-family: 'Source Sans Pro', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        nav {
+            color: #128;
+            max-height: 5vh;
+            text-align: right;
+        }
+        
+        nav a {
+            color: black;
+            text-decoration: none;
+        }
+        
+        nav li {
+            display: inline;
+            font-size: 4vh;
+            line-height: 5vh;
+            padding: 2vh;
+        }
+        
+        nav li:hover {
+            background-color: #eee border-radius: 0.5vw;
+            box-shadow: 0 1.5vh #731d1d;
+        }
+        
+        h1,
+        h3,
+        #morediv {
+            position: absolute;
+            text-align: center;
+            width: 100%;
+        }
+        
+        h1 {
+            color: #fff;
+            top: 33%;
+            font-size: 8vw;
+            text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.5);
+        }
+        
+        h2 {
+            font-size: 4vw;
+            margin: 0;
+            text-align: center;
+        }
+        
+        h3 {
+            top: 48%;
+            font-size: 4vw;
+            font-weight: 400;
+            color: rgba(255, 255, 255, 0.9);
+        }
+        
+        #header {
+            background-color: brown;
+            border-top: 1vw solid brown;
+            border-bottom: 0.5vw solid brown;
+            position: relative;
+            width: 100%;
+        }
+        
+        #media {
+            text-align: center;
+        }
+        
+        #more {
+            border: 0.3vw solid #fff;
+            border-radius: 0.3vw;
+            color: #fff;
+            font-size: 18px;
+            font-family: Open Sans, 'Signika', sans-serif;
+            font-weight: 300;
+            height: 6vw;
+            line-height: 6vw;
+            padding: 10px 15px;
+            text-decoration: none;
+            transition: all 0.2s;
+            width: auto;
+        }
+        
+        #more:hover:after {
+            content: " \27E9";
+        }
+        
+        #more:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+            border: none;
+        }
+        
+        #morediv {
+            top: 80%;
+        }
+        
+        #titleimg {
+            width: 100%;
+        }
+        
+        p {
+            font-family: 'Signika', sans-serif;
+            font-size: 2vmin
+        }
+        
+        footer {
+            background-color: brown;
+            color: white;
+            height: 2rem;
+            line-height: 2rem;
+            text-align: center;
+        }
+        
+        @media screen and (max-width: 640px) {
+            h2 {
+                font-size: 28px;
+            }
+            p,
+            ul:not(nav) {
+                font-size: 20px;
+                line-height: 25px;
+                margin: 20px;
+            }
+        }
+        
+        @media screen and (max-width: 480px) {
+            h1 {
+                font-size: 32px;
+            }
+            h3 {
+                font-size: 18px;
+            }
+        }
+        
+        @media screen and (min-width: 640px) {
+            p,
+            ul:not(nav) {
+                font-size: 22px;
+                width: 600px;
+                margin: 20px auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <a href="#main">
+                <li>About</li>
+            </a>
+            <a href="#goals">
+                <li>Goals</li>
+            </a>
+            <a href="#">
+                <li>Simulation</li>
+            </a>
+        </ul>
+    </nav>
+    <div id="header">
+        <img srcset="imgs/slum-1280px.jpg 1280w, imgs/slum-960px.jpg 960w, imgs/slum-640px.jpg 640w, imgs/slum-480px.jpg 480w, imgs/slum-320px.jpg 320w" src="imgs/slum-640px.jpg" id="titleimg" alt="Child in slum">
+        <h1>The POV Foundation</h1>
+        <h3>Commited to change</h3>
+        <div id="morediv">
+            <a id="more" href="#main">Learn more</a>
+        </div>
+    </div>
+    <div id="main">
+        <p>
+            We are a group of students commited to change in our community. Our goal is to educate middle school students about the realities of poverty. We want to give them a new point of view. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur. Donec ut libero sed arcu vehicula ultricies a non tortor.</p>
+    </div>
+    <div id="goals">
+        <h2>Goals</h2>
+        <ul>
+            <li>Education: We aim to educate the younger generation by allowing them to simulate living in a slum</li>
+            <li>Empathy: By letting the younger generation step into the shoes of a poor person, the game gives a real life opportunity to think and act as a person living in a slum would, something that cannot be achieved by just looking at pictures or reading statistics. Hence, we hope to reach out to their hearts.</li>
+            <li>Empowerment: Through education and empathy, we hope to inspire people to take action</li>
+        </ul>
+    </div>
+    <div id="media">
+        <h2>In the Media</h2>
+        <a href="http://lexington.wickedlocal.com/article/20150509/NEWS/150506268"><img src="imgs/minuteman-logo.png" height="100" alt="Lexington Minuteman">
+        </a>
+    </div>
+    <footer>
+        Made with &lt;3 in Lexington, Massachusetts. CC-BY-SA.
+    </footer>
+</body>
+
+</html>
